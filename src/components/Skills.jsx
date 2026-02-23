@@ -1,7 +1,20 @@
 import { motion } from 'framer-motion';
 
 function Skills() {
-  const skills = ['JavaScript', 'HTML', 'CSS', 'Reactjs', 'TypeScript','Style Component','Taiwind CSS', 'Flutter','Dart', 'Git', 'Github','Firebase', 'Responsive Design'];
+  const skills = [
+// Frontend
+    'JavaScript', 'HTML', 'CSS', 'React.js', 'TypeScript',
+    'Styled Components', 'Tailwind CSS', 'Responsive Design',
+    // Mobile
+    'Flutter', 'Dart',
+    // Backend / Integration
+    'Node.js', 'REST API Integration', 'Stripe Payment Integration', 
+    // QA / Testing
+    'Manual Testing', 'QA Testing', 'Bug Reporting', 'Test Case Writing', 
+    // Tools / Collaboration
+    'Git', 'GitHub', 'Firebase', 'Cross-Browser Compatibility', 
+    'UI/UX Principles', 'Agile Collaboration', 'Debugging & Problem Solving'
+];
 
   return (
     <motion.section
@@ -17,7 +30,8 @@ function Skills() {
           {skills.map((skill, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.15, rotate: 5 }}
+              whileHover={{ scale: 1.15, rotate: [0, 3, -3, 0] }}
+                transition={{ type: 'spring', stiffness: 300, damping: 20 }}
               className="bg-gradient-to-r from-purple-500 to-pink-500 dark:from-cyan-500 dark:to-purple-600 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg hover:shadow-2xl transition-shadow"
             >
               {skill}

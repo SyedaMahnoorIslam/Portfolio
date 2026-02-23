@@ -21,11 +21,11 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Education />
       <Experience />
       <Skills />
       <Projects />
       <Courses />
+      <Education />
       <Contact />
       <Footer />
     </motion.div>

@@ -8,15 +8,15 @@ function Courses() {
       year: "2025",
       description: "Comprehensive MERN stack development course covering MongoDB, Express, React, and Node.js."
     },
-    {
-      name: "JavaScript Algorithms and Data Structures",
-      platform: "freeCodeCamp",
-      year: "2025",
-      description: "In-depth learning of JS fundamentals and algorithms."
-    },
+    // {
+    //   name: "JavaScript Algorithms and Data Structures",
+    //   platform: "freeCodeCamp",
+    //   year: "2025",
+    //   description: "In-depth learning of JS fundamentals and algorithms."
+    // },
     {
       name: "Mobile App Development",
-      platform: "DevCastle IT institute",
+      platform: "DevCastle IT College",
       year: "2024",
       description: "Dart and Flutter for cross-platform mobile app development."
     }
